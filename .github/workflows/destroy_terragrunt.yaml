@@ -1,0 +1,13 @@
+---
+name: Destroy Terragrunt Resources
+on: [workflow_dispatch]
+  
+jobs:
+  DestroyPRD:
+    uses: Valcilio/github_workflows/.github/workflows/destroy_terragrunt_prd.yaml@main
+    secrets:
+      TF_LOG: INFO
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
