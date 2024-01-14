@@ -1,5 +1,5 @@
 ---
-name: Destroy Terragrunt Resources Test
+name: Destroy Terragrunt Resources
 on: [workflow_dispatch]
   
 jobs:
