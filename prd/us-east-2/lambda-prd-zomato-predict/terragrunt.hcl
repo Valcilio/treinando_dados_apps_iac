@@ -17,5 +17,5 @@ inputs = {
   name                = "lambda-${local.env}-${local.name}"
   role_arn            = "arn:aws:iam::959455567195:role/role-prd-zomato-predict-lambda"
   ecr_repository_name = "ecr-prd-zomato-predict-lambda"
-  image_tag = "latest"
+  image_tag           = "latest"
 }
